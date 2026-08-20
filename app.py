@@ -6,7 +6,7 @@ st.set_page_config(page_title="Student Performance Predictor", page_icon="📚")
 st.title("📚 Student Performance Predictor")
 st.write("Enter student information to estimate the final score.")
 
-model = joblib.load("model/student_performance_model.pkl")
+model = joblib.load("student_performance_model.pkl")
 
 study_hours = st.slider("Study hours per day", 0.0, 12.0, 5.0, 0.5)
 attendance = st.slider("Attendance (%)", 0.0, 100.0, 80.0, 1.0)
