@@ -1,14 +1,18 @@
 # Student Performance Predictor
 
+A Streamlit-based machine learning project that predicts a student's estimated final score and performance category based on academic performance data.
 
-A Streamlit-based project that predicts a student's estimated final score and performance category based on their academic performance data.
+## 🚀 Live Demo
+
+[Open Student Performance Predictor](https://student-performance-predictor-hk8hutp6a5xnjcnbyebcwg.streamlit.app/)
 
 ## Features
 
 * Predicts estimated final score
 * Categorizes student performance
 * Interactive Streamlit interface
-* Easy-to-understand results
+* Displays performance results and charts
+* Simple and easy-to-use interface
 
 ## Tech Stack
 
@@ -25,36 +29,38 @@ student-performance-predictor/
 ├── train_model.py
 ├── requirements.txt
 ├── README.md
-└── data/
-    └── student_data.csv
+├── student_data.csv
+└── student_performance_model.pkl
 ```
 
 ### File Description
 
 * `app.py` — Runs the Streamlit application.
-* `train_model.py` — Contains the model training code.
-* `requirements.txt` — Lists the Python libraries required to run the project.
-* `student_data.csv` — Contains the student performance dataset.
-* `README.md` — Contains the project documentation.
+* `train_model.py` — Trains the machine learning model.
+* `student_performance_model.pkl` — Saved trained model used for predictions.
+* `student_data.csv` — Student performance dataset.
+* `requirements.txt` — Lists the required Python libraries.
+* `README.md` — Project documentation.
 
 ## Project Output
 
-The application provides an estimated final score along with a performance category such as **Strong**.
+The application provides an estimated final score, a performance category, and a visual chart based on the entered student information.
 
 ## How to Run
 
-Install the required dependencies:
+1. Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run the Streamlit application:
+2. Run the Streamlit application:
 
 ```bash
 streamlit run app.py
 ```
 
-## Project 
+## Project
 
 Student Performance Predictor — First Project
+
